@@ -1,0 +1,21 @@
+@import "~styles/variables";
+
+body .custom-status {
+  margin: 0;
+
+  &-middle {
+    padding: 0 9px;
+    font-size: $baseFontSize;
+    line-height: 24px;
+  }
+
+  &-large {
+    padding: 0 11px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  &.ant-tag-green {
+    color: #347912;
+  }
+}

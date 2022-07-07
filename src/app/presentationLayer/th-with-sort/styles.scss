@@ -1,0 +1,16 @@
+.th-sort {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &__arrow {
+    margin: -1px 0 0 10px;
+    color: #333;
+    opacity: 0.2;
+    user-select: none;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+}

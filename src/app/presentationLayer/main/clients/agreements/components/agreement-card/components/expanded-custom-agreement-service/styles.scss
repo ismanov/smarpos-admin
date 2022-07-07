@@ -1,0 +1,54 @@
+.custom-agreement-service-expanded {
+  padding: 15px 10px;
+
+  &__desc {
+    position: relative;
+    margin: 0 0 25px;
+
+    &__head {
+      display: flex;
+      align-items: center;
+      margin: 0 0 20px;
+
+      &__inner {
+        font-size: 18px;
+        margin: 0 10px 0 0;
+      }
+    }
+
+    &__save {
+      //display: flex;
+      //justify-content: flex-end;
+    }
+  }
+
+  &__attachments {
+    &__list {
+      margin: 0 0 15px;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      margin: 0 0 5px;
+
+      &__icon {
+        margin: 0 5px 0 0;
+        font-size: 15px;
+        line-height: 0;
+      }
+
+      &__date {
+        margin: 0 10px 0 0;
+      }
+    }
+
+    &__buttons {
+      display: flex;
+
+      &__upload {
+        margin: 0 15px 0 0;
+      }
+    }
+  }
+}

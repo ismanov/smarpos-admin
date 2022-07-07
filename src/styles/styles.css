@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:focus {
+    outline: none;
+}
+
+body,
+html {
+    background-color: #f8fafb;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #a4b2bc;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #a4b2bc;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #a4b2bc;
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin: 8px;
+    border: 4px solid #98a9bc;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #98a9bc transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.react-css-collapse-transition {
+    transition: height 250ms cubic-bezier(.4, 0, .2, 1);
+}
+
+img {
+    max-width: 100%;
+}
+
+.calendar.visible {
+    z-index: 105;
+}
+
+.btn.sync-btn {
+    background-color: #009f3c;
+    color: #fff;
+    padding: 6px;
+    border: 0;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.chart-cm-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.chart-cm-buttons label {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.chart-cm-buttons label:last-child {
+    margin-right: 0;
+}
+
+.chart-cm-buttons label input {
+    margin-left: 10px;
+}
+
+
+.radio-item {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radio-item input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.radio-item:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.radio-item input:checked ~ .checkmark {
+    background-color: #009f3c;
+}
+
+.loading-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    .date-picker-app-wrapper {
+        width: 100%;
+    }
+}

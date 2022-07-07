@@ -1,0 +1,28 @@
+.wrapper {
+    height: 100%;
+    display: block;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #98a9bc;
+    font-weight: 300;
+}
+
+.body {
+    margin-top: 10px;
+    height: calc(100% - 100px);
+    position: relative;
+}
+
+.body .content {
+    height: 100%;
+    overflow-y: auto;
+    /*overflow-x: auto;*/
+}
+
+.pagination {
+    margin-top: 20px;
+}

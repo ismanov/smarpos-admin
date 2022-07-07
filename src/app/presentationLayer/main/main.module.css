@@ -1,0 +1,133 @@
+.main {
+    height: 100vh;
+    display: flex;
+    flex-flow: row;
+}
+
+
+.left_menu {
+    position: relative;
+    height: 100%;
+    width: 20%;
+    overflow-y: auto;
+    background-color: white;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.toolbar {
+    position: relative;
+    z-index: 1;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.toolbar .content {
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
+
+.toolbar .content .title {
+    margin-left: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4d4d4d;
+}
+
+.toolbar .content .profile {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 100;
+    color: #4d4d4d;
+    display: flex;
+    align-items: center;
+    margin-right: 55px;
+}
+
+.toolbar .content .profile .signout {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.content {
+    flex-grow: 1;
+    height: 100vh;
+    /*width: calc(100% - 320px);*/
+    width: 80%;
+    position: relative;
+}
+
+.content .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 60px);
+    padding: 15px 15px 20px 25px;
+    overflow-y: auto;
+}
+
+.logo_c {
+    margin: 50px auto 0 auto;
+    padding: 20px;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu_container {
+    margin-top: 50px;
+}
+
+/*!* small *!*/
+/*@media (min-width: 767px) {*/
+/*  .left_menu {*/
+/*    width: 240px;*/
+/*  }*/
+/*  .logo {*/
+/*    width: 200px;*/
+/*    height: 80px;*/
+/*  }*/
+/*}*/
+
+/*!* medium *!*/
+/*@media (min-width: 992px) {*/
+/*  .left_menu {*/
+/*    width: 270px;*/
+/*  }*/
+/*  .logo {*/
+/*    width: 200px;*/
+/*    height: 80px;*/
+/*  }*/
+/*}*/
+
+/*!* large *!*/
+/*@media (min-width: 1200px) {*/
+/*  .left_menu {*/
+/*    width: 320px;*/
+/*  }*/
+/*  .logo {*/
+/*    width: 200px;*/
+/*    height: 80px;*/
+/*  }*/
+/*}*/
+
+@media (max-width: 1200px) {
+    .logo_c {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .left_menu {
+        width: 25%;
+    }
+
+    .content {
+        width: 75%;
+    }
+}

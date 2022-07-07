@@ -1,0 +1,26 @@
+.input {
+  width: 100%;
+  font-size: 15px;
+  border: 1px solid #a4b2bc;
+  color: #a4b2bc;
+  border-radius: 4px;
+  padding: 0px 16px;
+  background-color: white;
+}
+
+.input:focus {
+  border: 2px solid #98a9bc;
+  color: #98a9bc;
+}
+
+.input:disabled {
+  border: 1px solid #dddddd;
+  color: #dddddd;
+}
+
+.title {
+  color: #252631;
+  font-size: 14px;
+  font-weight: 100;
+  margin-bottom: 4px;
+}

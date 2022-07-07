@@ -1,0 +1,28 @@
+.add-order {
+  &__products {
+    & &__form-field {
+      margin: 0;
+    }
+
+    .last-row {
+      vertical-align: top;
+    }
+  }
+
+  &__additional {
+    max-width: 1000px;
+    margin: 50px 0 0;
+  }
+
+  &__additional-table {
+    margin: 0 0 30px;
+  }
+
+  &__buttons {
+    margin: 25px 0 0;
+
+    .ant-btn + .ant-btn {
+      margin: 0 0 0 20px;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@import "~styles/variables";
+
+.permission-mode {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+.permission-mode__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  padding: 10px 150px 10px 10px;
+  background: $primaryColor;
+
+  line-height: 1;
+  color: #fff;
+}
+
+.permission-mode__btns {
+  display: flex;
+  margin-left: 5px;
+
+  .ant-btn {
+    margin: 0 0 0 15px;
+  }
+}
+
+//.permission-mode__btns button {
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//  border-radius: 4px;
+//  height: 30px;
+//  padding: 0 10px;
+//
+//  background-color: #98a9bc;
+//
+//  color: white;
+//  border: none;
+//  cursor: pointer;
+//}
+
+.permission-mode__loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, .8);
+}

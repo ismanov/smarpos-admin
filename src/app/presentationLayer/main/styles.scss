@@ -1,0 +1,156 @@
+.app {
+  .site-layout {
+    background: none;
+    height: 100%;
+
+    &__header {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      height: 56px;
+      line-height: normal;
+      padding: 0 50px 0 28px;
+      background: #fff;
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.1);
+
+      &__left {
+        display: flex;
+        align-items: center;
+        font-size: 0;
+        line-height: 0;
+      }
+
+      &__burger {
+
+        .ant-btn {
+          color: #009F3C;
+        }
+      }
+    }
+
+    &__logo {
+      height: 30px;
+      margin: -2px 0 0 28px;
+      font-size: 0;
+      line-height: 0;
+
+      svg {
+        height: 100%;
+      }
+    }
+
+    &__middle {
+      background: none;
+    }
+
+    &__left {
+      overflow-y: auto;
+      background: #FBFDFE;
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 45px 0 30px;
+    }
+
+    &__content {
+      padding: 32px 32px 30px 16px;
+      overflow-y: auto;
+    }
+  }
+
+  .site-layout-background {
+    background: #fff;
+  }
+}
+
+.flex-start {
+  height: 125px;
+  justify-content: start;
+  align-items: start;
+}
+
+.checkModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 30px;
+
+  .error-text {
+    width: 90%;
+    text-align: center;
+    color: red;
+  }
+
+  &__title {
+    width: 90%;
+    text-align: center;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+
+    button {
+      width: 200px;
+    }
+    &__telegram {
+      background: #0088cc !important;   
+      border: #0088cc !important;
+      margin-right: 20px ;
+      &:hover {
+        border: #0088cc !important;
+      }
+    }
+  }
+
+  &__input-field {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 25px 0 10px;
+
+    input {
+      border: none;
+      width: 30px;
+      border-bottom: solid 1px;
+      margin-right: 10px;
+      text-align: center;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+    button {
+      color: #0088cc !important;
+    }
+  }
+
+  &__button-field {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 0 ;
+  }
+
+}
+
+.loaderContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+

@@ -1,0 +1,13 @@
+.CP__cheques {
+  &__card {
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    transition: all 300ms ease-in-out;
+  }
+
+  .CP__cabinet__table {
+    min-height: 600px;
+  }
+}

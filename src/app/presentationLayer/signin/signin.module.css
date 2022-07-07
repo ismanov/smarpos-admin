@@ -1,0 +1,39 @@
+.main {
+  height: 100vh;
+  display: flex;
+  flex-flow: row;
+}
+
+.form {
+  background-color: white;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form .content {
+  width: 60%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.right_bg {
+  width: 50vw;
+  background-image: url("../../assets/img/auth_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mt_15 {
+  margin-top: 15px;
+}
+
+.input {
+  margin-top: 40px;
+}
+
+.button {
+  margin-top: 85px;
+}

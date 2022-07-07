@@ -1,0 +1,13 @@
+.wrapper {
+  width: 100%;
+  display: block;
+}
+
+.wrapper .title {
+  color: #64748B;
+}
+
+.wrapper .value {
+  margin-top: 3px;
+  font-size: 16px;
+}

@@ -1,0 +1,281 @@
+@import "~styles/variables";
+
+.agreement-card {
+  &__loader {
+    margin: 15px 0 0;
+    text-align: center;
+  }
+
+  &__body {
+    display: flex;
+  }
+
+  &__side {
+    width: 300px;
+    margin: 0 20px 0 0;
+  }
+
+  &__content {
+    position: relative;
+    flex-grow: 1;
+  }
+
+  &__navigation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    .ant-menu-item {
+      margin: 0 !important;
+      border-bottom: 1px solid #eee;
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+
+    &__block {
+      width: 50%;
+      border-bottom: 1px solid #e8e8e8;
+      padding: 7px 10px;
+      line-height: 1.3;
+    }
+
+    &__title {
+      color: #737373;
+      font-weight: 600;
+      margin: 0 0 1px;
+    }
+
+    &__value {
+      font-size: 16px;
+    }
+  }
+
+  .current-order {
+    &-loader {
+      margin: 40px 0 0;
+    }
+
+    &__top-row {
+      display: flex;
+    }
+
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 16px 17px;
+      border-bottom: 1px solid #DCDCE1;
+
+      h2 {
+        font-size: 18px;
+        margin: 0 0 10px;
+      }
+    }
+
+    &__name {
+      margin: 10px 0 0;
+
+      font-weight: 500;
+      font-size: 14px;
+      color: #65647A;
+    }
+
+    &__type {
+      margin: 0 0 2px;
+
+      font-size: 11px;
+      text-transform: uppercase;
+      color: #777;
+    }
+
+    &__date {
+      font-size: 12px;
+      color: #777;
+    }
+
+    &__top-right {
+      display: flex;
+      align-items: center;
+
+      .details-btn-confirm {
+        width: 100%;
+        min-width: 0;
+        margin: 0 0 10px;
+      }
+    }
+
+    &__btns {
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin: 0 20px 0 0;
+    }
+
+    &__uploaded-file {
+      margin: 0 0 0 10px;
+      text-align: right;
+      line-height: 1;
+    }
+
+    &__accept {
+      margin: 0 0 0 10px;
+    }
+
+    &__document {
+      padding: 20px;
+      font-size: 0;
+      line-height: 0;
+
+      .custom-loader {
+        padding: 10px 0;
+      }
+
+      &-btns {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 0 20px;
+
+        .ant-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 32px;
+          height: 32px;
+          padding: 5px 3px;
+          margin: 0 0 0 10px;
+
+          svg {
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+      }
+
+      &-content {
+        text-align: center;
+      }
+
+      &-img {
+        padding: 20px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      iframe {
+        border: none;
+
+        body {
+          padding: 0 100px;
+        }
+      }
+
+      .doc {
+        width: 100%;
+      }
+
+      canvas {
+        margin: 0 auto;
+      }
+    }
+
+    &__custom {
+      padding: 20px;
+    }
+  }
+}
+
+.agreements-report {
+  width: 100%;
+  padding: 10px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 5px;
+    border-bottom: 1px solid #000;
+
+    &__status {
+      font-weight: 600;
+      font-size: 1.2em;
+      text-align: center;
+      padding: 5px !important ;
+    }
+
+  }
+  
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+
+    &__title {
+      font-weight: 700;
+      font-size: 1.1em;
+    }
+    &__body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 15px 5px;
+
+      span {
+        color:#000;
+      }
+    }
+
+
+  }
+  table {
+    width: 100%;
+  }
+  th {
+    font-size: 1.1em;
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    text-align: center;
+    padding: 3px;
+  }
+
+}
+
+@media print {
+
+  table {
+    margin: 20px 5% ;
+    width: 90%;
+  }
+  th {
+    font-size: 1.1em;
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    text-align: center;
+    padding: 3px;
+  }
+}
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+.text-align-center{
+  text-align: center;
+}

@@ -1,0 +1,94 @@
+.wrapper {
+  height: 100%;
+  position: relative;
+}
+
+.wrapper .header {
+  height: 50px;
+  color: #98a9bc;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .content {
+  height: calc(100% - 50px - 70px);
+  position: relative;
+}
+
+.wrapper .content .filter_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper .content .filter {
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  position: relative;
+  width: 100%;
+  flex-wrap:wrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.wrapper .content .filter_row .add_button {
+  color: white;
+  background-color: #98a9bc;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.wrapper .content .card {
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.wrapper .content .card .table {
+  height: calc(100% - 50px);
+  overflow-y: auto;
+  /*overflow-x: auto;*/
+}
+
+.wrapper .content .card .table thead {
+  height: 30px;
+  background-color: #98a9bc33;
+  color: #98a9bc;
+  font-size: 15px;
+}
+
+.wrapper .content .card .table tbody td {
+  height: 30px;
+  color: #98a9bc;
+  font-size: 15px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.wrapper .pagination {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width:992px) {
+  .wrapper .content .filter > div {
+    width:100%;
+    margin-left: 0!important;
+    margin-bottom: 15px;
+  }
+}
+@media (min-width:993px) {
+  .wrapper .content .filter > div {
+    margin-bottom:10px;
+  }
+}

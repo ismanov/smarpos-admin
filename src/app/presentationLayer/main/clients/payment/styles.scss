@@ -1,0 +1,68 @@
+.CKBP {
+  position: relative;
+
+  &__error {
+    margin: 0 0 15px;
+  }
+
+  &__client-info {
+    margin: 0 0 15px;
+
+    &__item {
+
+    }
+  }
+
+  &__button {
+    margin: 30px 0 0;
+  }
+}
+
+.SCF {
+  &__pinCode {
+    margin: 0 -20px 0 0;
+
+    .pincode-input-text {
+
+    }
+
+    &.pinCodeComplete {
+      .pincode-input-text {
+
+      }
+    }
+
+    &.pinCodeError {
+      .pincode-input-text {
+
+      }
+    }
+  }
+
+  &__pinCodeComplete {
+
+  }
+
+  &__pinCodeError {
+
+  }
+
+  &__alert {
+    margin: 16px 0 0 !important;
+  }
+
+  &__resendBtn {
+    display: inline-block;
+    border-bottom: 1px solid #333;
+    line-height: 1.3;
+    cursor: pointer;
+
+    &:hover, &:focus {
+      border-color: transparent;
+    }
+  }
+
+  &__resendBtnLoading {
+    margin: 0 0 0 10px;
+  }
+}

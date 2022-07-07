@@ -1,0 +1,86 @@
+.main {
+  border-image-source: url("../../../assets/img/frame_check.png");
+  border-image-slice: 12 7 12 7;
+  border-image-width: 20px 10px 20px 10px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  border-width: 25px 15px;
+  border-style: solid;
+  width: 350px;
+  /*height: 700px;*/
+  color: #555;
+}
+
+.content {
+  height: calc(100% - 20px);
+  background-color: white;
+  overflow: auto;
+  padding: 10px 10px 10px 5px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.circular_content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company_title {
+  margin-top: 20px;
+  font-size: 17px;
+}
+
+.divider {
+  height: 1px;
+  border-bottom: 1px dashed #999;
+  margin: 8px 0;
+}
+
+.company_header {
+  margin-top: 4px;
+  color: #777;
+}
+
+.centered {
+  text-align: center;
+}
+
+.pair {
+  display: flex;
+  flex-flow: row;
+}
+
+.pair .left {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column;
+}
+
+.pair .right {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.qrcode_container {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.qrcode {
+  width: 200px;
+  height: 200px;
+  background-color: #009f3c;
+}

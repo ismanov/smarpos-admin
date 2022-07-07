@@ -1,0 +1,139 @@
+.wrapper {
+    height: 100%;
+    position: relative;
+    color: #4d4d4d;
+}
+
+.header {
+    height: 60px;
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title {
+    font-size: 16px;
+    color: #4d4d4d;
+    flex-grow: 1;
+}
+
+.header_buttons {
+    display: flex;
+    margin-right: 50px;
+}
+
+.content {
+    height: calc(100% - 75px);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.catalog_container {
+    width: 40%;
+    border: 1px solid #eeeeee;
+    height: 100%;
+    overflow: auto;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products_container {
+    width: 60%;
+    padding-left: 15px;
+    min-height: 100%;
+}
+
+.empty_catalog {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4d4d4d;
+}
+
+.catalog_item {
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+
+}
+
+.catalog_item_child {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+}
+
+.open_arrow {
+    transition: all 200ms linear;
+    transform: rotate(0deg);
+}
+
+/*opening animation and direction*/
+.open_arrow.open {
+    transform: rotate(90deg);
+}
+
+.products_header {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.products {
+    height: calc(100% - 50px);
+    margin-top: 10px;
+    padding: 0 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid #eee;
+}
+
+
+.product_item {
+    height: 40px;
+    padding: 10px 16px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    width: 100%;
+}
+
+.divider {
+    height: 1px;
+    background-color: #eee;
+}
+
+@media (max-width: 992px) {
+    .catalog_container {
+        width: 50%;
+    }
+
+    .products_container {
+        width: 50%;
+    }
+
+    .products > div {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .product_item {
+        font-size: 13px;
+    }
+
+    .catalog_item {
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+}

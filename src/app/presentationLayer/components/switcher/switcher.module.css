@@ -1,0 +1,31 @@
+.wrapper {
+  height: 40px;
+  display: block;
+}
+
+.wrapper .content {
+  display: flex;
+  flex-flow: row;
+  position: relative;
+}
+
+.wrapper .content .item {
+  height: 30px;
+  min-width: 60px;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #98a9bc;
+  transition: all 150ms;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .content .item.active {
+  min-width: 100px;
+  padding: 0 10px;
+  font-size: 15px;
+  color: #009f3c;
+  border-bottom: 3px solid #009f3c;
+}

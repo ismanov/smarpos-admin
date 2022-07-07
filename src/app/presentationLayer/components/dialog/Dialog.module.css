@@ -1,0 +1,44 @@
+.wrapper {
+  display: flex;
+  flex-flow: column;
+  padding: 0;
+}
+
+.title {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  color: #555555;
+  font-weight: bold;
+  font-size: 22px;
+
+}
+
+.content {
+  color: #666;
+  text-align: center;
+  font-size: 17px;
+  margin-top: 20px;
+  font-weight: 200;
+}
+
+.bottom {
+  height: 60px;
+  display: flex;
+  flex-flow: row;
+}
+
+.bottom .item {
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.bottom .item .button {
+  border: none;
+  background-color: transparent;
+  color: #666;
+  font-size: 17px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 40px;
+}

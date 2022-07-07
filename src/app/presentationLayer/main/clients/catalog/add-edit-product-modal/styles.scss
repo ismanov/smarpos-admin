@@ -1,0 +1,94 @@
+.APM {
+  &__row {
+    display: flex;
+  }
+
+  &__col-left {
+    flex-shrink: 0;
+    width: 400px;
+  }
+
+  &__col-right {
+    flex-grow: 1;
+    margin: 0 0 0 25px;
+  }
+
+  &__sub-head {
+    margin: 0 0 23px;
+  }
+
+  &__units {
+    border: 1px solid #eee;
+    padding: 15px;
+    overflow-y: auto;
+    height: calc(100% - 100px);
+
+    &__item {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      margin: 0 0 10px;
+      padding: 10px 20px;
+      background-color: white;
+      user-select: none;
+      border-radius: 8px;
+      border: 1px solid #019a3c;
+
+      &_base {
+        background-color: #009f3c33;
+      }
+
+      &__select {
+        width: 150px;
+      }
+
+      &__input {
+        width: 150px;
+      }
+
+      &__drag {
+        margin: 0 15px 0 10px;
+        font-size: 19px;
+        color: #019a3c;
+      }
+
+      &__name {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+      }
+
+      &__one {
+        margin: 0 10px 0 0;
+      }
+
+      &__equal {
+        margin: 0 10px;
+      }
+
+      &__input-unit {
+        margin: 0 0 0 10px;
+      }
+
+      &__buttons {
+        display: flex;
+        margin: 0 0 0 20px;
+
+        .ant-btn + .ant-btn {
+          margin: 0 0 0 10px;
+        }
+      }
+
+      &__arrow-buttons {
+        display: flex;
+        flex-flow: column;
+        margin-left: 10px;
+
+        .ant-btn + .ant-btn {
+          margin: 5px 0 0;
+        }
+      }
+    }
+  }
+}

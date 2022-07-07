@@ -1,0 +1,54 @@
+.form-field-item {
+  margin: 0 0 15px;
+
+  &__desc {
+    margin: 3px 0 0;
+    color: #777;
+  }
+
+  &__error {
+    margin: 2px 0 0;
+    color: #ea0505;
+    font-size: 12px;
+
+    .pincode-input-text {
+      border-color: #ea0505 !important;
+    }
+  }
+
+  &__note {
+    margin: 3px 0 0;
+    color: #B2B1BC;
+    font-size: 11px;
+  }
+}
+
+.form-field-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 10px;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: #65647A;
+}
+
+.row-with-desc {
+  margin: 0 0 15px;
+
+  .form-field-item {
+    margin-bottom: 0 !important;
+  }
+
+  & &__desc {
+    margin: 10px 0 0;
+  }
+}
+
+.form-bottom {
+  margin: 30px 0 0;
+
+  .ant-btn {
+    width: 100%;
+  }
+}

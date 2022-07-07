@@ -1,0 +1,32 @@
+.CP__catalog__products {
+  flex-grow: 1;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin: 0 0 30px;
+    font-size: 18px;
+  }
+
+  &__price-field {
+    display: flex;
+    align-items: center;
+
+    &__input {
+      width: 150px;
+    }
+
+    .ant-btn {
+      margin: 0 0 0 10px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    .ant-btn + .ant-btn {
+      margin: 0 0 0 15px;
+    }
+  }
+}

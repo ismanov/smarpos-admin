@@ -1,0 +1,114 @@
+@import "~styles/variables";
+
+.CP {
+  &__stats {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px 0 20px -10px;
+    min-height: 25px;
+    font-size: 16px;
+
+    &__item {
+      flex-grow: 1;
+      margin: 10px 0 0 10px;
+
+      background: #FFFFFF;
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.1);
+      border-left: 3px solid #009f3c;
+      border-radius: 6px;
+      padding: 7px 12px;
+      text-align: right;
+    }
+  }
+
+  &__content {
+    padding: 0 0 30px;
+  }
+
+  &__info {
+    position: relative;
+
+    &__head {
+      display: flex;
+      align-items: center;
+      margin: 0 0 20px;
+
+      h2 {
+        margin: 0;
+
+        font-size: 18px;
+        font-weight: 500;
+        color: #64748B;
+      }
+
+      .ant-btn {
+        margin: 0 0 0 15px;
+      }
+    }
+
+
+    &__loader {
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    &__content {
+
+    }
+
+    &__data {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 0 0 -15px;
+
+      &__item {
+        width: 50%;
+        margin: 0 0 15px;
+        padding: 0 0 0 15px;
+
+        &>div {
+          height: 100%;
+          padding: 8px 15px;
+          background: #f5f5f5;
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.1);
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+
+  &__navigation {
+    margin: 0 0 30px;
+
+    &__item-inner {
+      margin: 0 12px;
+      border-bottom: 2px solid transparent;
+    }
+
+    .ant-menu {
+      background: #FFFFFF;
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+      padding: 0 10px;
+
+      &-item, &-submenu {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        border: none !important;
+      }
+
+      &-item-selected, &-submenu-selected {
+        .CP__navigation__item-inner {
+          border-color: $primaryColor;
+        }
+      }
+    }
+  }
+
+  &__cabinet {
+    &__table {
+      max-height: 700px;
+      overflow-y: auto;
+    }
+  }
+}

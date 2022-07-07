@@ -1,0 +1,68 @@
+@import "~styles/variables";
+
+.site-header-user {
+  min-width: 200px;
+  color: #65647A;
+
+  &__loading {
+    text-align: center;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    &__left {
+      margin-right: 15px;
+
+      .ant-avatar {
+        background: none;
+        color: $mediumBlue;
+        border: 1px solid $mediumBlue;
+      }
+    }
+
+    &__middle {
+      flex-grow: 1;
+      margin-right: 15px;
+    }
+
+    &__right {
+      flex-shrink: 0;
+      line-height: 1;
+
+      svg {
+        width: 12px;
+      }
+    }
+  }
+
+  &__loading {
+    text-align: center;
+  }
+
+  &__dropdown {
+    min-width: 160px;
+
+    &__logout {
+      margin: 0;
+
+      a {
+        display: block;
+      }
+    }
+
+    &__item {
+      .ant-btn {
+        height: auto;
+        border: none;
+      }
+
+      .ant-btn-link, a {
+        padding: 5px 0;
+      }
+    }
+  }
+}

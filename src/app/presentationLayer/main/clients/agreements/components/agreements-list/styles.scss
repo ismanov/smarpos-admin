@@ -1,0 +1,15 @@
+.customer-balance {
+  position: relative;
+  margin: 0 15px 0 0;
+  min-width: 100px;
+  min-height: 28px;
+
+  div {
+    a {
+      color: inherit;
+      &:hover {
+        color: #009f3c;
+      }
+    }
+  }
+}

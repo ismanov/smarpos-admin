@@ -1,0 +1,51 @@
+.with-permission {
+  position: relative;
+
+  &_MENU_TYPE {
+    &.with-permission_active {
+      svg {
+        opacity: 0;
+      }
+    }
+  }
+
+  &_SUB_MENU_TYPE {
+    &.with-permission_active {
+      svg {
+        opacity: 0;
+      }
+    }
+  }
+
+  &_PAGE_TYPE {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &_STATIC_TYPE {
+    display: flex;
+    align-items: center;
+  }
+
+  &__checkbox {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__inner {
+      padding: 5px;
+      background: rgba(0, 0, 0, .08);
+      border-radius: 4px;
+      font-size: 0;
+      line-height: 0;
+    }
+  }
+}
+
+.not-allowed-page {
+  font-size: 30px;
+  padding: 25px 10px;
+}

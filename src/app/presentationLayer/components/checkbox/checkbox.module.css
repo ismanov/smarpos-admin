@@ -1,0 +1,70 @@
+.custom_checkbox {
+  cursor: pointer;
+}
+
+.custom_checkbox_mark {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.custom_checkbox_input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.custom_checkbox_inner {
+  position: relative;
+  display: block;
+  background-color: #fff;
+  border-radius: 2px;
+  border-collapse: separate;
+  transition: all 0.3s;
+  width: 20px;
+  height: 20px;
+
+  font-size: 0;
+  line-height: 0;
+}
+
+.custom_checkbox_checked .custom_checkbox_inner {
+  background: #A4A1FB;
+  border-color: #A4A1FB;
+}
+
+.custom_checkbox_inner:after {
+  content: ' ';
+  position: absolute;
+  top: 48%;
+  left: 30%;
+  display: table;
+  width: 4px;
+  height: 8px;
+  border: 2px solid #fff;
+  border-top: 0;
+  border-left: 0;
+  transform: rotate(45deg) scale(0) translate(-50%, -50%);
+  transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6), opacity 0.1s;
+  opacity: 0;
+}
+
+.custom_checkbox_checked .custom_checkbox_inner:after {
+  border-top: 0;
+  border-left: 0;
+
+  transform: rotate(45deg) scale(1) translate(-50%, -50%);
+  opacity: 1;
+  transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+}
+
+.custom_checkbox_text {
+  margin: 0 0 0 5px;
+}

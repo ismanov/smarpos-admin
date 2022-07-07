@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,700i&display=swap');
+
+@mixin margin-class($type: 't', $margin: 0) {
+  .m-#{$type}-#{$margin} {
+    @if $type == 't' {
+      margin-top: #{$margin}px
+    }
+    @if $type == 'r' {
+      margin-right: #{$margin}px
+    }
+    @if $type == 'b' {
+      margin-bottom: #{$margin}px
+    }
+    @if $type == 'l' {
+      margin-left: #{$margin}px
+    }
+  }
+}
+
+@function sss($m) {
+  @return 'margin: #{$m};';
+}
+
+@for $i from 1 through 200 {
+  @include margin-class('t', $i);
+  @include margin-class('r', $i);
+  @include margin-class('b', $i);
+  @include margin-class('l', $i);
+};

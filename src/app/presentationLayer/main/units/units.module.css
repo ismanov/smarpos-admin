@@ -1,0 +1,54 @@
+.wrapper {
+  height: 100%;
+}
+
+.title {
+  color: #98a9bc;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.content {
+  margin-top: 15px;
+  height: calc(100% - 50px);
+  padding: 0;
+  overflow-y: auto;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.table .header {
+  color: white;
+  background-color: #a4b2bc;
+  height: 40px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.row {
+  height: 35px;
+  color: #a4b2bc;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.row td {
+  border-bottom: 1px solid #a4b2bc55;
+}
+
+.empty_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #98a9bc;
+  min-height: 300px;
+}
+
+.row input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+}

@@ -1,0 +1,217 @@
+.wrapper {
+  height: 100%;
+}
+
+.wrapper .header {
+  padding-top: 10px;
+  display: flex;
+  flex-flow: row;
+  height: 40px;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.wrapper .header .back {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.wrapper .header .title {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.wrapper .info_content {
+  height: calc(100% - 40px - 200px);
+  padding-top: 10px;
+  display: flex;
+  flex-flow: row;
+  position: relative;
+}
+
+.wrapper .info_content .table {
+  height: 100%;
+  width: 65%;
+  padding: 15px;
+  position: relative;
+}
+
+.wrapper .info_content .info {
+  height: 100%;
+  flex-grow: 1;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+/* filter */
+
+.wrapper .filter_panel {
+  margin-top: 10px;
+  width: calc(100% - 40px);
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.filter_panel .title {
+  padding: 15px 0 10px 20px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color: #98a9bc;
+}
+
+.filter_panel .hr {
+  height: 1px;
+  background-color: #dddddd;
+  width: 100%;
+}
+
+.filter_panel .content {
+  overflow-x: auto;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-flow: row;
+}
+
+/* filter select component */
+
+.filter_select {
+  height: 120px;
+  width: 120px;
+  border: 1px solid #a4b2bc88;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-flow: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  transition: all 300ms;
+}
+
+.filter_select.active {
+  border: 1px solid #009f3c;
+}
+
+.filter_select .circle_container {
+  display: flex;
+  justify-content: center;
+}
+
+.filter_select .circle_container .circle {
+  padding: 10px 0;
+  text-align: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ddd;
+  border-radius: 22px;
+  transition: all 300ms;
+}
+
+.filter_select .circle_container .circle.active {
+  background-color: #009f3c66;
+}
+
+.filter_select .title {
+  padding: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  color: #a4b2bc;
+}
+
+.filter_select .sum {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #4d4d4d;
+  text-align: center;
+}
+
+/* tables */
+
+.table .info_table {
+  width: 100%;
+  height: 100%;
+}
+
+.table .info_table .card {
+  height: calc(100% - 50px);
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.table .info_table .pagination {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+/* info */
+
+.wrapper .info_content .info .about {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.wrapper .info_content .info .about .branch_info {
+  height: 220px;
+  padding: 0;
+}
+
+.wrapper .info_content .info .about .branch_info .header {
+  color: #4d4d4d;
+  height: 40px;
+  padding-left: 10px;
+  border-bottom: 1px solid #dddddd;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.wrapper .info_content .info .about .branch_info .content {
+  height: 100%;
+  padding: 10px;
+}
+
+.wrapper .info_content .info .about .branch_info .title {
+  text-transform: uppercase;
+  font-weight: 100;
+  color: #a4b2bc;
+  font-size: 14px;
+}
+
+.wrapper .info_content .info .about .branch_info .value {
+  margin-top: 6px;
+  font-weight: 100;
+  color: #4d4d4d88;
+  font-size: 15px;
+}
+
+.wrapper .info_content .info .about .logs {
+  padding: 0;
+  margin-top: 15px;
+  flex-grow: 1;
+}
+
+.wrapper .info_content .info .about .logs .header {
+  color: #4d4d4d;
+  height: 40px;
+  padding-left: 10px;
+  border-bottom: 1px solid #dddddd;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}

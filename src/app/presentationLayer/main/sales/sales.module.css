@@ -1,0 +1,35 @@
+.wrapper {
+  height: 100%;
+  padding: 20px;
+}
+
+.wrapper .content {
+  height: calc(100% - 50px);
+}
+
+.wrapper .content .card {
+  height: 100%;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.wrapper .content .card .header {
+  display: flex;
+  flex-flow: row;
+}
+
+.wrapper .content .card .header .search {
+  margin-left: 10px;
+}
+
+.wrapper .content .card .table {
+  margin-top: 10px;
+  height: calc(100% - 50px);
+  overflow-y: auto;
+}
+
+.wrapper .pagination {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}

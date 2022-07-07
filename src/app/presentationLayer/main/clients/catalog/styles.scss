@@ -1,0 +1,182 @@
+.CP__catalog {
+
+  &__header {
+    &__buttons {
+      display: flex;
+      align-items: center;
+
+      .ant-btn {
+        margin: 0 0 0 10px;
+      }
+    }
+  }
+
+  &__content__row {
+    display: flex;
+  }
+
+  &__categories {
+    width: 40%;
+    margin: 0 20px 0 0;
+
+    & &__filter {
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+  }
+
+  &__products {
+    flex-grow: 1;
+
+    &__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 40px;
+      margin: 0 0 30px;
+      font-size: 18px;
+    }
+
+    &__price-field {
+      display: flex;
+      align-items: center;
+
+      &__input {
+        width: 150px;
+      }
+
+      .ant-btn {
+        margin: 0 0 0 10px;
+      }
+    }
+  }
+  
+  &__tree-wr {
+    margin: 30px 0 0;
+  }
+
+  &__tree {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &-loader {
+      display: flex;
+      justify-content: center;
+      padding: 20px 0 0;
+    }
+
+    & > li {
+      margin: 0 0 15px;
+    }
+
+    &-item {
+      &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 17px;
+        color: #555;
+        cursor: pointer;
+
+        &.active {
+          color: #333;
+
+          .CP__catalog__tree-item-icon {
+            span {
+              transform: rotate(90deg);
+            }
+          }
+        }
+
+        &.has-child {
+          .CP__catalog__tree-item-icon {
+            opacity: 1;
+          }
+        }
+      }
+
+      &-icon {
+        opacity: 0;
+        font-size: 0;
+        width: 32px;
+
+        span {
+          display: block;
+          transition: all 200ms;
+        }
+      }
+
+      &-text {
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+
+        &-strong {
+          font-weight: bold;
+        }
+
+        &.light {
+          background: yellowgreen;
+        }
+
+        &.selected {
+          color: #009f3c;
+        }
+      }
+
+      &-actions {
+        display: flex;
+        flex-shrink: 0;
+
+        button {
+          border: none;
+          background: none;
+          padding: 5px 8px;
+          cursor: pointer;
+          color: #98a9bc;
+          font-size: 18px;
+          line-height: 1;
+        }
+      }
+
+      &-count {
+        font-size: 14px;
+        color: #666;
+      }
+
+      &-menu {
+        margin: 0 0 0 10px;
+
+        .ant-btn {
+          border: none;
+          box-shadow: none;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  &__sub-tree {
+    margin: 0;
+    padding: 0 0 0 20px;
+    list-style: none;
+    display: none;
+
+    &-opened {
+      display: block;
+    }
+
+    & > li {
+      margin: 15px 0 0;
+    }
+
+    .CP__catalog__tree-item {
+      &-inner {
+        font-size: 15px;
+        color: #555;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.select-days {
+
+  .ant-popover-inner-content {
+    padding: 22px 28px;
+  }
+
+  &__week {
+    width: 240px;
+
+    &__item {
+      margin: 18px 0 0;
+
+      &:first-child {
+        margin: 0;
+      }
+    }
+
+    .ant-checkbox-wrapper {
+      font-size: 16px;
+
+      .ant-checkbox {
+        & + span {
+          padding: 0 0 0 16px;
+        }
+      }
+    }
+  }
+
+  &__month {
+    width: 340px;
+
+    &__head {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__inner {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 25%;
+      margin: 20px 0 0;
+    }
+
+    .ant-checkbox-wrapper {
+      font-size: 16px;
+
+      .ant-checkbox {
+        & + span {
+          padding: 0 0 0 12px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.add-income {
+  &__products {
+    margin: 0 0 30px;
+
+    &-table {
+      .ant-table .ant-table-thead > tr > th, .ant-table .ant-table-thead > tr > td, .ant-table .ant-table-tbody > tr > th, .ant-table .ant-table-tbody > tr > td {
+        padding: 7px 5px;
+        vertical-align: middle;
+      }
+    }
+
+    &__vat {
+      text-align: center;
+
+      &__title {
+        font-size: 12px;
+        color: #555555;
+      }
+    }
+    .last-row {
+      vertical-align: top;
+    }
+  }
+
+  &__add-product {
+    &__form-field {
+      margin: 0;
+    }
+
+    &__percent-field {
+      width: 100px;
+    }
+
+    &__markup-row {
+      display: flex;
+      align-items: center;
+
+      &__divider {
+        margin: 0 10px;
+      }
+    }
+  }
+
+  &__buttons {
+    margin: 25px 0 0;
+
+    .ant-btn + .ant-btn {
+      margin: 0 0 0 20px;
+    }
+  }
+}
